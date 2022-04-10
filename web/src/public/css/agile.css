@@ -1,6 +1,7 @@
 :root{
   --page-color: #fafafa;
   --accent-color: #afeeee;
+  --dark-color: #234f1e;
   --font: Helvetica;
 }
 body{
@@ -8,11 +9,41 @@ body{
   background: var(--page-color);
   margin: 0px;
   font-family: var(--font);
+  box-sizing: border-box;
 }
 .Title{
   font-size: 3rem;
+  color: var(--dark-color);
   margin: auto;
   padding: 2rem;
   text-align: center;
   background: var(--accent-color);
+  text-decoration: underline;
+}
+.outline{
+  margin: 0.1rem;
+  border: solid;
+  border-color: var(--dark-color);
+  border-width: 0.75rem;
+  border-radius: 0.5rem;
+}
+.product{
+  display: grid;
+  grid-template-columns:1fr 3fr;
+  grid-gap: 1rem;
+}
+.subtitle{
+  padding-left: 0.3rem;
+  font-size: 1.5rem;
+}
+.team h1{
+  text-align: center
+}
+ul{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+}
+li{
+  margin-left: auto;
+  margin-right: auto;
 }
