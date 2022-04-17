@@ -9,7 +9,7 @@ services:
       - 80:6000 # host : container
     volumes:
       - ./web/src:/app
-    container_name: agile-web
+    container_name: assignment2
 
 volumes:
   db:
