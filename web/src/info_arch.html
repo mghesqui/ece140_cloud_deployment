@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Individual Assignment - KVP</title>
+    <meta name="author" content="Maxime Ghesquiere">
+    <meta name="description" content="Information Architecture Page for individual assignments">
+
+    <link rel="stylesheet" type="text/css" href="css/agile.css">
+  </head>
+
+  <body>
+    <div class="Title">
+      <h1>Grocery Tracker - Information Architecture</h1>
+      <div class="menu">
+        <button type="button" onclick="menuToggle()">Menu</button>
+        <div class="collapsible" id="menuContent">
+        </div>
+      </div>
+    </div>
+    <div class="outline product">
+      <h1 class="subtitle"> Part 1</h1>
+      <p>
+        On first sign in to our app, the user needs to have access to information about what items they have in their fridge, and certain details about those items such as the amount, or last seen date.
+        The principle of objects guides how we display information about individual items in the fridge. Each item keeps track of when it was added, its quantity, and where it is stored. When the item is fully removed from the fridge the associated object is deleted.
+        The principle of front doors is important in our design as if someone saves their logged in page as an entrance, any return to this page should redirect to the login page.
+        The principle of multiple classification inspired us to include both an infinitely scrollable list of items, as well as a search bar and filters to allow faster queries.
+        A chronological organization makes the most sense for our product, with the youngest products at the top. When a search is used, a hierarchicle organization (using the confidence in a certain lable as the ordering factor) also makes sense to put the most relevent items at the top.
+
+      </p>
+    </div>
+    <script src="/js/info_arch.js"></script>
+  </body>
+</html>

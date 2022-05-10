@@ -11,6 +11,9 @@ def get_product(req):
 def get_kvp(req):
   return FileResponse("kvp.html")
 
+def get_info_arch(req):
+  return FileResponse("info_arch.html")
+
 ''' Route Configurations '''
 if __name__ == '__main__':
   config = Configurator()
@@ -23,6 +26,9 @@ if __name__ == '__main__':
 
   config.add_route('get_kvp', '/kvp')
   config.add_view(get_kvp, route_name='get_kvp')
+
+  config.add_route('get_info_arch', '/info_arch')
+  config.add_view(get_info_arch, route_name='get_info_arch')
 
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
