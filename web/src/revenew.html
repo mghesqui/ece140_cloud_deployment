@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Individual Assignment - KVP</title>
+    <meta name="author" content="Maxime Ghesquiere">
+    <meta name="description" content="Revenue Page for individual assignments">
+
+    <link rel="stylesheet" type="text/css" href="css/agile.css">
+  </head>
+
+  <body>
+    <div class="Title">
+      <h1>Grocery Tracker - Costs and Revenue</h1>
+      <div class="menu">
+        <button type="button" onclick="menuToggle()">Menu</button>
+        <div class="collapsible" id="menuContent">
+        </div>
+      </div>
+    </div>
+    <div class="outline product">
+      <h1 class="subtitle">Costs</h1>
+      <p>
+        Our total material costs per item are $40. The camera costs $17, the contact sensor costs $4, the microcontroller costs $15 (Pi Zero), and casing materials and assembly cost 4 dollars per unit (this will scale down with economies of scale).
+        Additionally, we have a few fixed costs that do not scale with market size (or scale very little): server hosting costs $30-$50 a month, and the ClarifAI API used for image classification costs $30 a month.
+      </p>
+      <h1 class="subtitle">Revenue</h1>
+      <p>
+        Our revenue model centers on an online sale model, with units selling for $65 a piece. We would suplement this with advertising revenue (average $0.02 per impression) which could be replaced with a subscription plan of $1 a month to turn off adverts.
+        We expect to sell 5000 units a year, leading to $325,000 a year in sales. We expect our advertising to bring in $0.02*(1 impression per app use)*(2 to 3 app uses per week)*(52 weeks) = $2.6 per year for advertised users. For those who take the subscription plan we would have a revenue of $12 per user per year.
+        If we assume 90% of users will stay with the advertising plan, that gives us a total anual net revenue of 325000+(0.9*5000*2.6)+(0.1*5000*12) - 200000-960 =  342700-200960 = $141740.
+      </p>
+    </div>
+    <script src="/js/revenue.js"></script>
+  </body>
+</html>

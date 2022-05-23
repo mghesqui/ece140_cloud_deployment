@@ -14,6 +14,9 @@ def get_kvp(req):
 def get_info_arch(req):
   return FileResponse("info_arch.html")
 
+def get_revenue(req):
+  return FileResponse("revenew.html")
+
 ''' Route Configurations '''
 if __name__ == '__main__':
   config = Configurator()
@@ -29,6 +32,9 @@ if __name__ == '__main__':
 
   config.add_route('get_info_arch', '/info_arch')
   config.add_view(get_info_arch, route_name='get_info_arch')
+
+  config.add_route('get_revenue', '/revenue')
+  config.add_view(get_revenue, route_name='get_revenue')
 
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
