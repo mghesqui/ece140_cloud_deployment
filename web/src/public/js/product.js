@@ -3,7 +3,7 @@ function menuToggle(){
  if(menu_open){
    document.getElementById("menuContent").innerHTML="";
  }else{
-   document.getElementById("menuContent").innerHTML="<a href=\"/\" >Home</a><a href=\"/kvp\" >KVP</a><a href=\"/info_arch\" >Information Architecture</a><a href=\"/revenue\" >Revenue Model</a>";
+   document.getElementById("menuContent").innerHTML="<a href=\"/\" >Home</a><a href=\"/kvp\" >KVP</a><a href=\"/info_arch\" >Information Architecture</a><a href=\"/revenue\" >Revenue Model</a><a href=\"/pivot\" >Pivot</a>";
  }
   menu_open=!menu_open;
 }

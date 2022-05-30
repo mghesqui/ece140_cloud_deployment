@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Individual Assignment - KVP</title>
+    <meta name="author" content="Maxime Ghesquiere">
+    <meta name="description" content="Pivot Page for individual assignments">
+
+    <link rel="stylesheet" type="text/css" href="css/agile.css">
+  </head>
+
+  <body>
+    <div class="Title">
+      <h1>Grocery Tracker - Pivot</h1>
+      <div class="menu">
+        <button type="button" onclick="menuToggle()">Menu</button>
+        <div class="collapsible" id="menuContent">
+        </div>
+      </div>
+    </div>
+    <div class="outline">
+      <p>
+        We performed a few pivots over the quarter. First, we moved away from a battery powered system to a wired system for the camera unit. This was both a technology and a customer need pivot. The battery powered model could be placed inside the fridge as opposed to above it, but needed to be recharges/ batteries swapped at least once a week. This did not meet our customer need of seemless integration.
+        Another pivot we performed was a Zoom-in pivot to focus on the core of our product, automatically tracking your groceries with little to no user input. Our initial plans incuded other features such as an automated restock and a recipe checker, but these were either heavily disliked by customers (restock) or required too much work for little return.
+        Our last pivot was another technology pivot. Our initial design used the ClarifAI api for object classification. While it was effective, it was costly and did not provide us all the features we needed. We therefore switched to "You Only Look Once" (YOLO) for our classifier. This is an open source classifier, that allows us to also track quantities and direction of motion, both crucial to our core feature.
+      </p>
+    </div>
+    <script src="/js/pivot.js"></script>
+  </body>
+</html>
